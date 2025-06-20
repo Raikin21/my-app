@@ -101,9 +101,10 @@ export default function Home() {
               </section>
 
               <section className="section">
-                <h3>VR Gaming: Nowe okulary Meta Quest 4 z fotorealistyczną grafiką</h3>
-                <p>Immersyjna technologia przyszłości. Gracze twierdzą, że czują się "jak w Matrixie".</p>
-              </section>
+               <h3>VR Gaming: Nowe okulary Meta Quest 4 z fotorealistyczną grafiką</h3>
+                <p>Immersyjna technologia przyszłości. Gracze twierdzą, że czują się &quot;jak w Matrixie&quot;.</p>
+               </section>
+
 
               <section className="section">
                 <h3>Retro: Powrót kultowego Pegasusa – konsola z 90’s wraca w wersji mini</h3>
