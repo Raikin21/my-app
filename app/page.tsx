@@ -1,103 +1,154 @@
-import Image from "next/image";
+// app/page.tsx
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <>
+      <header>
+        <div className="container">
+          <div className="header__content">
+            <div className="header__info">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png"
+                alt="Logo"
+                className="header__logo"
+              />
+              <div className="header__title">Gaming Portal</div>
+            </div>
+            <div className="header__icons">
+              <div className="header__subtitle">Nikita Zholudiev (Album: 121265)</div>
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/147/147142.png"
+                alt="User Icon"
+                id="header__icon"
+              />
+            </div>
+          </div>
+        </div>
+      </header>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      <main>
+        <div className="container">
+          <div className="content">
+            <div className="content__left bordered">
+              <div className="content__title">
+                <div className="text-small-muted">Opublikowano: 21 kwietnia 2025, 12:45</div>
+                <div className="title">Nowa generacja PlayStation 5 już tu jest!</div>
+              </div>
+              <section className="image">
+                <img
+                  src="https://ae01.alicdn.com/kf/S6cfac973fc6849a5996610c751eea0d1o.png"
+                  alt="PlayStation 5"
+                  className="image"
+                />
+              </section>
+              <section>
+                <p>
+                  <span className="span">PlayStation 5</span> to najnowsza konsola od Sony, która oferuje graczom
+                  niesamowite wrażenia dzięki technologii SSD, obsłudze ray tracingu oraz zaawansowanemu systemowi
+                  audio 3D.
+                </p>
+              </section>
+              <section>
+                <p>
+                  Nowa konsola wspiera rozdzielczość 4K i wkrótce będzie dostępna z nowymi grami, które wykorzystają jej
+                  pełny potencjał. Dzięki błyskawicznemu ładowaniu, granie nigdy nie było szybsze.
+                </p>
+              </section>
+              <section>
+                <p>
+                  PlayStation 5 wprowadza również nowy kontroler DualSense, który daje graczom bardziej immersyjne
+                  doświadczenia dzięki haptic feedback i adaptacyjnym triggerom.
+                </p>
+              </section>
+              <section>
+                <p>
+                  Dzięki wstecznej kompatybilności, możesz cieszyć się grami z PS4 w ulepszonej wersji, co sprawia, że
+                  PS5 jest prawdziwym centrum multimedialnym.
+                </p>
+              </section>
+              <section className="right">
+                <p className="text-small-muted">Źródło: GamingNews.pl</p>
+              </section>
+            </div>
+
+            <div className="content__right bordered">
+              <div className="content__right__top">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png"
+                  alt="Point"
+                  className="point"
+                />
+                <div className="content__right__top__title">
+                  <div className="title-right">Zobacz również inne wiadomości</div>
+                  <div className="education">
+                    Linki do artykułów nie działają, są zamieszczone dla celów edukacyjnych.
+                  </div>
+                </div>
+              </div>
+
+              <section className="section">
+                <h3>Kibersport: Team Phoenix wygrywa finały Mistrzostw Świata w Valorant</h3>
+                <p>
+                  Po intensywnym meczu drużyna z Polski zdobywa tytuł mistrzów świata i nagrodę 1 miliona dolarów.
+                </p>
+              </section>
+
+              <section className="section">
+                <h3>Streaming: Nowy rekord na Twitchu – 1,5 mln widzów na żywo!</h3>
+                <p>
+                  Streamerka LUNA rozgrywająca finałową walkę w grze Elden Ring przyciągnęła ogromną publikę.
+                </p>
+              </section>
+
+              <section className="section">
+                <h3>VR Gaming: Nowe okulary Meta Quest 4 z fotorealistyczną grafiką</h3>
+                <p>Immersyjna technologia przyszłości. Gracze twierdzą, że czują się "jak w Matrixie".</p>
+              </section>
+
+              <section className="section">
+                <h3>Retro: Powrót kultowego Pegasusa – konsola z 90’s wraca w wersji mini</h3>
+                <p>Nowa edycja zawiera 200 klasycznych gier, w tym Contra, Mario i Tanki!</p>
+              </section>
+
+              <section className="section">
+                <h3>DevZone: Twórcy ogłaszają otwarte beta-testy gry RPG “Shadow of Epoch”</h3>
+                <p>
+                  Niezależne studio z Wrocławia zaskakuje graczy mrocznym klimatem i dynamiczną walką.
+                </p>
+              </section>
+            </div>
+          </div>
         </div>
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+
+      <footer>
+        <div className="container">
+          <div className="footer__content">
+            <div className="footer__left">
+              <div className="footer__title">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png"
+                  alt="Logo"
+                  className="header__logo"
+                />
+                <div className="header__title">Gaming News Portal</div>
+              </div>
+              <div className="footer__text">
+                Portal stworzony z pasji do gamingu. Śledź z nami premiery, testy sprzętu, wywiady z twórcami i wszystko,
+                co związane z grami.
+              </div>
+            </div>
+            <div className="footer__right">
+              <div style={{ fontWeight: 600 }}>Technologie:</div>
+              <div className="footer__text">HTML + CSS + Gaming pasja</div>
+            </div>
+          </div>
+          <div className="footer__divider"></div>
+          <div className="footer__down">
+            Projekt i realizacja: GamingDev Team &copy; 2025 Gaming World News
+          </div>
+        </div>
       </footer>
-    </div>
+    </>
   );
 }
